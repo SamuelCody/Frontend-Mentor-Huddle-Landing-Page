@@ -1,0 +1,104 @@
+body {
+  background:url(../images/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+background-position: top -100px left -85px;
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.butn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 1px 2px 5px #5c5c5c;
+  -moz-box-shadow: 1px 2px 5px #5c5c5c;
+  box-shadow: 1px 2px 5px #5c5c5c;
+  font-family: 'Poppins', sans-serif;
+  color: #674BAF;
+  font-size: 14px;
+  background: #ffffff;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #674BAF;
+  text-decoration: none;
+  color:#ffffff;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+.image {
+  height: 90%;
+}
+.container {
+  margin: 29px 0 0 29px;
+}
+.content-wrapper {
+  display: flex;
+  margin-top: 15px;
+}
+.item {
+  flex: 1;
+}
+.text {
+  margin-top: 30px;
+  color: white;
+  line-height: 1.5;
+}
+.fab {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width:930px) {
+  body {
+    background:url(../images/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
+    background-size: contain;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image {
+    width: 80%;
+  }
+  .item {
+    text-align: center;
+    justify-content: center;
+  }
+  .social {
+    justify-content: center;
+  }
+  .text {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width:1100px){
+    h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:960px){
+    .social {
+      justify-content: center;
+    }
+    h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
